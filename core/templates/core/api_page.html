@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Fake API{% endblock %}
+
+{% block content %}
+    <h1>Данные из fake API</h1>
+
+    {% for user in users %}
+        <div class="card">
+            <h2>{{ user.name }}</h2>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Телефон:</strong> {{ user.phone }}</p>
+            <p><strong>Сайт:</strong> {{ user.website }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

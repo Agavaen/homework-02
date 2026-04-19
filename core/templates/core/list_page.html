@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Список{% endblock %}
+
+{% block content %}
+    <h1>Сортированный список</h1>
+
+    <ol>
+        <li>Фрукты
+            <ol>
+                <li>Яблоко</li>
+                <li>Банан</li>
+                <li>Апельсин</li>
+            </ol>
+        </li>
+        <li>Овощи
+            <ol>
+                <li>Помидор</li>
+                <li>Огурец</li>
+                <li>Морковь</li>
+            </ol>
+        </li>
+        <li>Напитки
+            <ol>
+                <li>Чай</li>
+                <li>Кофе</li>
+                <li>Сок</li>
+            </ol>
+        </li>
+    </ol>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Django Homework{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="{% url 'home' %}">Главная</a>
+            <a href="{% url 'list_page' %}">Список</a>
+            <a href="{% url 'card_page' %}">Карточка</a>
+            <a href="{% url 'api_page' %}">Fake API</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Мой Django проект</p>
+    </footer>
+</body>
+</html>
